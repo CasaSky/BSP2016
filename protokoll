@@ -1,0 +1,859 @@
+talal@gnom-V5-573G ~ $ bg cat tex
+bash: bg: cat: Kein solcher Job.
+bash: bg: tex: Kein solcher Job.
+talal@gnom-V5-573G ~ $  cd Dropbox/BS2016/
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ nano ausgabe.txt
+Fehler beim Lesen von /home/talal/.nano/search_history: Keine Berechtigung
+Drücken Sie die Eingabetaste zum Fortfahren
+
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ cat ausgabe.txt 
+Hallo, hier ist ein Text zur Ausgabe.
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ cd ~
+talal@gnom-V5-573G ~ $ cd ~/Dropbox/BS2016
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ chmod +r ausgabe.txt 
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ nano ausgabe.txt 
+Fehler beim Lesen von /home/talal/.nano/search_history: Keine Berechtigung
+Drücken Sie die Eingabetaste zum Fortfahren
+
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ cat ausgabe.txt 
+Hallo, hier ist ein Text zur Ausgabe. 111
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ nano ausgabe.txt 
+Fehler beim Lesen von /home/talal/.nano/search_history: Keine Berechtigung
+Drücken Sie die Eingabetaste zum Fortfahren
+
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ chmod -w ausgabe.txt 
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ nano ausgabe.txt 
+Fehler beim Lesen von /home/talal/.nano/search_history: Keine Berechtigung
+Drücken Sie die Eingabetaste zum Fortfahren
+
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ cat ausgabe.txt 
+Hallo, hier ist ein Text zur Ausgabe.
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ cp -i ausgabe.txt ausgabecopy.txt
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ ls
+ausgabecopy.txt  BS_2016_WS_Orga_Infos.pdf                           BSPAufgabe1.pdf  long.txt  schreiben.odt
+ausgabe.txt      BS_2016_WS_Vorlesung_01_160916_Folien_1_bis_41.pdf  cProgramme       mkfile.c  skripte
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ cat ausgabecopy.txt 
+Hallo, hier ist ein Text zur Ausgabe.
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ date
+Mo 19. Sep 10:20:38 CEST 2016
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ df
+Dateisystem          1K-Blöcke   Benutzt Verfügbar Verw% Eingehängt auf
+udev                   4008272         0   4008272    0% /dev
+tmpfs                   805668      9852    795816    2% /run
+/dev/sda5             19554584  12218096   6320120   66% /
+tmpfs                  4028340    530560   3497780   14% /dev/shm
+tmpfs                     5120         4      5116    1% /run/lock
+tmpfs                  4028340         0   4028340    0% /sys/fs/cgroup
+/dev/sda4            245945504 205313640  28115464   88% /home
+cgmfs                      100         0       100    0% /run/cgmanager/fs
+tmpfs                   805668        32    805636    1% /run/user/1000
+/home/talal/.Private 245945504 205313640  28115464   88% /home/talal
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ diff ausgabe.txt ausgabecopy.txt 
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ nano ausgabeFr.txt
+Fehler beim Lesen von /home/talal/.nano/search_history: Keine Berechtigung
+Drücken Sie die Eingabetaste zum Fortfahren
+
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ diff ausgabe.txt ausgabeFr.txt 
+1c1
+< Hallo, hier ist ein Text zur Ausgabe.
+---
+> Salut, voila un text pour l'affichage.
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ echo Linux is much better than windows.
+Linux is much better than windows.
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ env
+XDG_VTNR=7
+SSH_AGENT_PID=3643
+XDG_SESSION_ID=c1
+QT_STYLE_OVERRIDE=gtk
+TERM=xterm-256color
+SHELL=/bin/bash
+VTE_VERSION=4205
+XDG_SESSION_COOKIE=d9fa3c05abc55928a304360857b7b6a1-1474216611.718924-140528434
+QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+GJS_DEBUG_OUTPUT=stderr
+WINDOWID=56641824
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+GTK_MODULES=gail:atk-bridge
+USER=talal
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+QT_ACCESSIBILITY=1
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+SESSION_MANAGER=local/gnom-V5-573G:@/tmp/.ICE-unix/3574,unix/gnom-V5-573G:/tmp/.ICE-unix/3574
+USERNAME=talal
+DEFAULTS_PATH=/usr/share/gconf/cinnamon.default.path
+XDG_CONFIG_DIRS=/etc/xdg/xdg-cinnamon:/etc/xdg
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/java/jdk1.8.0_101/
+DESKTOP_SESSION=cinnamon
+GDM_XSERVER_LOCATION=local
+PWD=/home/talal/Dropbox/BS2016
+LANG=de_DE.UTF-8
+MANDATORY_PATH=/usr/share/gconf/cinnamon.mandatory.path
+MDM_XSERVER_LOCATION=local
+GDMSESSION=cinnamon
+CINNAMON_VERSION=3.0.7
+SHLVL=1
+XDG_SEAT=seat0
+HOME=/home/talal
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GTK_OVERLAY_SCROLLING=1
+XDG_SESSION_DESKTOP=cinnamon
+LOGNAME=talal
+XDG_DATA_DIRS=/usr/share/cinnamon:/usr/share/gnome:/usr/local/share/:/usr/share/:/usr/share/mdm/
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-CyhI6vgLWc,guid=3db133804bfdf7b85176976c57dec2a4
+LESSOPEN=| /usr/bin/lesspipe %s
+MDMSESSION=cinnamon
+WINDOWPATH=7
+XDG_RUNTIME_DIR=/run/user/1000
+DISPLAY=:0
+MDM_LANG=de_DE.UTF-8
+XDG_CURRENT_DESKTOP=X-Cinnamon
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XAUTHORITY=/tmp/.mdmQ0XONY
+_=/usr/bin/env
+OLDPWD=/home/talal
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ JAVA_HOME=/opt/java/jdk1.8.0_101/bin/
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ export JAVA_HOME
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ mkdir newDir
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ mv ausgabecopy.txt newDir/ausgabe.txt
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ find newDir/ -name ausgabe.txt -print
+newDir/ausgabe.txt
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ grep -r ausgabe ausgabe.txt 
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ grep -r Ausgabe ausgabe.txt 
+Hallo, hier ist ein Text zur Ausgabe.
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ jobs
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ ls
+ausgabeFr.txt  BS_2016_WS_Orga_Infos.pdf                           BSPAufgabe1.pdf  long.txt  newDir         skripte
+ausgabe.txt    BS_2016_WS_Vorlesung_01_160916_Folien_1_bis_41.pdf  cProgramme       mkfile.c  schreiben.odt
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ touch link.txt
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ ln -s link.txt ausgabe.txt
+ln: Die symbolische Verknüpfung 'ausgabe.txt' konnte nicht angelegt werden: Die Datei existiert bereits
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ rm link.txt 
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ ln -s link.txt ausgabe.txt
+ln: Die symbolische Verknüpfung 'ausgabe.txt' konnte nicht angelegt werden: Die Datei existiert bereits
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ ln -s ausgabe.txt link.txt
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ cat link.txt 
+Hallo, hier ist ein Text zur Ausgabe.
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ ls
+ausgabeFr.txt  BS_2016_WS_Orga_Infos.pdf                           BSPAufgabe1.pdf  link.txt  mkfile.c  schreiben.odt
+ausgabe.txt    BS_2016_WS_Vorlesung_01_160916_Folien_1_bis_41.pdf  cProgramme       long.txt  newDir    skripte
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ ls -l
+insgesamt 2280
+-rw-r--r-- 1 talal talal      39 Sep 19 10:23 ausgabeFr.txt
+-r--r--r-- 1 talal talal      38 Sep 19 10:18 ausgabe.txt
+-rw-r--r-- 1 talal talal  305211 Sep 18 15:59 BS_2016_WS_Orga_Infos.pdf
+-rw-r--r-- 1 talal talal 1346487 Sep 18 16:00 BS_2016_WS_Vorlesung_01_160916_Folien_1_bis_41.pdf
+-rw-r--r-- 1 talal talal  539127 Sep 19 10:12 BSPAufgabe1.pdf
+drwxr-xr-x 2 talal talal    4096 Sep 18 22:26 cProgramme
+lrwxrwxrwx 1 talal talal      11 Sep 19 10:32 link.txt -> ausgabe.txt
+-rw-r--r-- 1 root  root    10409 Sep 18 16:04 long.txt
+-rw-r--r-- 1 talal talal     759 Sep 18 22:35 mkfile.c
+drwxr-xr-x 2 talal talal    4096 Sep 19 10:27 newDir
+-rw-r--r-- 1 talal talal   17911 Sep 18 22:26 schreiben.odt
+drwxr-xr-x 2 talal talal    4096 Sep 18 22:25 skripte
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ man git
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ more long.txt 
+Betriebssystem
+QS-Informatik
+Dieser Artikel wurde wegen inhaltlicher Mängel auf der Qualitätssicherungsseite der Redaktion Informatik eingetragen. 
+Dies geschieht, um die Qualität der Artikel aus dem Themengebiet Informatik auf ein akzeptables Niveau zu bringen. Hil
+f mit, die inhaltlichen Mängel dieses Artikels zu beseitigen, und beteilige dich an der Diskussion! (+)
+Begründung: Da fehlt leider noch enorm viel, v.a. im Bereich Geschichte (Ab wann kann von Betriebssystemen überhaupt g
+esprochen werden? Zeittafel / Stammbaum wäre gut) und Technik (Abgrenzung Kernel / Dienstprogramme / Treiber). --Jacek
+79✇✇ 16:47, 24. Dez. 2015 (CET) Auch fehlt eine Auflistung der Arten von Betriebssystemen.--Sae1962 (Diskussion) 11:52
+, 30. Jan. 2016 (CET)
+
+
+Zusammenhang zwischen Betriebssystem, Hardware, Anwendungssoftware und dem Benutzer
+Ein Betriebssystem ist eine Zusammenstellung von Computerprogrammen, die die Systemressourcen eines Computers wie Arbe
+itsspeicher, Festplatten, Ein- und Ausgabegeräte verwaltet und diese Anwendungsprogrammen zur Verfügung stellt. Das Be
+triebssystem bildet dadurch die Schnittstelle zwischen den Hardware-Komponenten und der Anwendungssoftware des Benutze
+rs.[1] Betriebssysteme bestehen in der Regel aus einem Kernel (deutsch: Kern), der die Hardware des Computers verwalte
+t, sowie speziellen Programmen, die beim Start unterschiedliche Aufgaben übernehmen. Zu diesen Aufgaben gehört unter a
+nderem das Laden von Gerätetreibern. Betriebssysteme finden sich in fast allen Arten von Computern: Als Echtzeitbetrie
+bssysteme auf Prozessrechnern und Eingebetteten Systemen, auf Personal Computern, Tablet Computern, Smartphones und au
+f größeren Mehrprozessorsystemen wie z. B. Servern und Großrechnern.
+Die Aufgaben eines Betriebssystems lassen sich wie folgt zusammenfassen: Benutzerkommunikation; Laden, Ausführen, Unte
+rbrechen und Beenden von Programmen; Verwaltung und Zuteilung der Prozessorzeit; Verwaltung des internen Speicherplatz
+es für Anwendungen; Verwaltung und Betrieb der angeschlossenen Geräte; Schutzfunktionen z. B. durch Zugriffsbeschränku
+ngen. Die Gewichtung zwischen diesen Aufgaben wandelte sich im Laufe der Zeit, insbesondere wird Schutzfunktionen wie 
+dem Speicherschutz oder begrenzten Benutzerrechten heute eine höhere Bedeutung zugemessen als noch in den 1990er Jahre
+n. Dies macht Systeme allgemein robuster, reduziert z. B. die Zahl der Programm- und Systemabstürze und macht das Syst
+em auch stabiler gegen Angriffe von außen, etwa durch Computerviren.
+Dieser Artikel behandelt den Begriff „Betriebssystem“ hauptsächlich im Kontext „allgemein zur Informationsverarbeitung
+ verwendete Computersysteme“. Daneben sind Betriebssysteme (mit ggf. spezialisierter Funktionalität) grundsätzlich in 
+nahezu allen Geräten im Einsatz, in denen Software betrieben wird (wie Spielecomputer, Mobiltelefone, Navigationssyste
+me, Maschinen der Maschinenbaubranchen u. v. a.). Auch viele Steuerungssysteme (eingebettetes System) die z. B. in Flu
+gzeugen, Autos, Zügen, oder in Satelliten zu finden sind, besitzen spezialisierte Betriebssysteme.
+Inhaltsverzeichnis  [Verbergen] 
+1	Definitionen und Abgrenzung
+2	Entwicklungsstufen
+3	Aufgaben
+4	Betriebsmittelverwaltung und Abstraktion
+4.1	Einführendes Beispiel: Zeitgeberbausteine
+4.1.1	Virtuelle Prozessoren
+4.1.2	Virtuelle Zeitgeber
+4.2	Abstraktion
+4.3	Virtualisierung weiterer Betriebsmittel
+4.3.1	Dateisysteme
+4.3.2	Interner Speicher
+4.3.3	Netzwerk
+4.3.4	Bildschirm
+5	Geschichte
+5.1	Erste Betriebssysteme (bis 1980)
+5.2	Meilensteine
+5.2.1	Der C64, ein Heimcomputer der 1980er Jahre
+5.2.2	Die grafische Benutzeroberfläche (GUI) von Apple
+5.2.3	Der Mac-OS-Nachfolger
+5.2.4	Disk Operating System (DOS)
+5.2.5	Microsoft Windows
+5.2.6	Linux (GNU/Linux)
+6	Siehe auch
+7	Literatur
+8	Weblinks
+9	Einzelnachweise
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/java/jdk1.8.0_101/
+talal@gnom-V5-573G /opt/idea-IU-162.1628.40/bin $ $PATH=PATH:/opt/idea-IU-162.1628.40/bin/
+bash: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/java/jdk1.8.0_101/=PATH:/opt/idea-IU-162.1628.40/bin/: Datei oder Verzeichnis nicht gefunden
+talal@gnom-V5-573G /opt/idea-IU-162.1628.40/bin $ export PATH=$PATH:/opt/idea-IU-162.1628.40/bin/
+talal@gnom-V5-573G /opt/idea-IU-162.1628.40/bin $ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/
+appletviewer.policy     idea64.vmoptions        idea.vmoptions          libyjpagent-linux64.so
+fsnotifier              idea.png                inspect.sh              libyjpagent-linux.so
+fsnotifier64            idea.properties         libbreakgen64.so        log.xml
+fsnotifier-arm          idea.sh                 libbreakgen.so          
+talal@gnom-V5-573G /opt/idea-IU-162.1628.40/bin $ idea.sh 
+/bin/cat: /home/talal/.IntelliJIdea2016.2/idea64.vmoptions: Ist ein Verzeichnis
+^C
+
+
+talal@gnom-V5-573G /opt/idea-IU-162.1628.40/bin $ ps
+  PID TTY          TIME CMD
+30186 pts/0    00:00:00 bash
+30957 pts/0    00:00:00 ps
+talal@gnom-V5-573G /opt/idea-IU-162.1628.40/bin $ ps -efa
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 Sep18 ?        00:00:03 /sbin/init splash
+root         2     0  0 Sep18 ?        00:00:00 [kthreadd]
+root         3     2  0 Sep18 ?        00:00:00 [ksoftirqd/0]
+root         5     2  0 Sep18 ?        00:00:00 [kworker/0:0H]
+root         7     2  0 Sep18 ?        00:01:25 [rcu_sched]
+root         8     2  0 Sep18 ?        00:00:00 [rcu_bh]
+root         9     2  0 Sep18 ?        00:00:00 [migration/0]
+root        10     2  0 Sep18 ?        00:00:00 [watchdog/0]
+root        11     2  0 Sep18 ?        00:00:00 [watchdog/1]
+root        12     2  0 Sep18 ?        00:00:00 [migration/1]
+root        13     2  0 Sep18 ?        00:00:00 [ksoftirqd/1]
+root        15     2  0 Sep18 ?        00:00:00 [kworker/1:0H]
+root        16     2  0 Sep18 ?        00:00:00 [watchdog/2]
+root        17     2  0 Sep18 ?        00:00:00 [migration/2]
+root        18     2  0 Sep18 ?        00:00:00 [ksoftirqd/2]
+root        20     2  0 Sep18 ?        00:00:00 [kworker/2:0H]
+root        21     2  0 Sep18 ?        00:00:00 [watchdog/3]
+root        22     2  0 Sep18 ?        00:00:00 [migration/3]
+root        23     2  0 Sep18 ?        00:00:01 [ksoftirqd/3]
+root        25     2  0 Sep18 ?        00:00:00 [kworker/3:0H]
+root        26     2  0 Sep18 ?        00:00:00 [kdevtmpfs]
+root        27     2  0 Sep18 ?        00:00:00 [netns]
+root        28     2  0 Sep18 ?        00:00:00 [perf]
+root        29     2  0 Sep18 ?        00:00:00 [khungtaskd]
+root        30     2  0 Sep18 ?        00:00:00 [writeback]
+root        31     2  0 Sep18 ?        00:00:00 [ksmd]
+root        32     2  0 Sep18 ?        00:00:09 [khugepaged]
+root        33     2  0 Sep18 ?        00:00:00 [crypto]
+root        34     2  0 Sep18 ?        00:00:00 [kintegrityd]
+root        35     2  0 Sep18 ?        00:00:00 [bioset]
+root        36     2  0 Sep18 ?        00:00:00 [kblockd]
+root        37     2  0 Sep18 ?        00:00:00 [ata_sff]
+root        38     2  0 Sep18 ?        00:00:00 [md]
+root        39     2  0 Sep18 ?        00:00:00 [devfreq_wq]
+root        44     2  0 Sep18 ?        00:00:00 [kswapd0]
+root        45     2  0 Sep18 ?        00:00:00 [vmstat]
+root        46     2  0 Sep18 ?        00:00:00 [fsnotify_mark]
+root        47     2  0 Sep18 ?        00:00:00 [ecryptfs-kthrea]
+root        63     2  0 Sep18 ?        00:00:00 [kthrotld]
+root        64     2  0 Sep18 ?        00:00:00 [acpi_thermal_pm]
+root        65     2  0 Sep18 ?        00:00:00 [bioset]
+root        66     2  0 Sep18 ?        00:00:00 [bioset]
+root        67     2  0 Sep18 ?        00:00:00 [bioset]
+root        68     2  0 Sep18 ?        00:00:00 [bioset]
+root        69     2  0 Sep18 ?        00:00:00 [bioset]
+root        70     2  0 Sep18 ?        00:00:00 [bioset]
+root        71     2  0 Sep18 ?        00:00:00 [bioset]
+root        72     2  0 Sep18 ?        00:00:00 [bioset]
+root        73     2  0 Sep18 ?        00:00:00 [bioset]
+root        74     2  0 Sep18 ?        00:00:00 [bioset]
+root        75     2  0 Sep18 ?        00:00:00 [bioset]
+root        76     2  0 Sep18 ?        00:00:00 [bioset]
+root        77     2  0 Sep18 ?        00:00:00 [bioset]
+root        78     2  0 Sep18 ?        00:00:00 [bioset]
+root        79     2  0 Sep18 ?        00:00:00 [bioset]
+root        80     2  0 Sep18 ?        00:00:00 [bioset]
+root        81     2  0 Sep18 ?        00:00:00 [bioset]
+root        82     2  0 Sep18 ?        00:00:00 [bioset]
+root        83     2  0 Sep18 ?        00:00:00 [bioset]
+root        84     2  0 Sep18 ?        00:00:00 [bioset]
+root        85     2  0 Sep18 ?        00:00:00 [bioset]
+root        86     2  0 Sep18 ?        00:00:00 [bioset]
+root        88     2  0 Sep18 ?        00:00:00 [bioset]
+root        89     2  0 Sep18 ?        00:00:00 [bioset]
+root        93     2  0 Sep18 ?        00:00:00 [ipv6_addrconf]
+root       107     2  0 Sep18 ?        00:00:00 [deferwq]
+root       108     2  0 Sep18 ?        00:00:00 [charger_manager]
+root       358     2  0 Sep18 ?        00:00:00 [scsi_eh_0]
+root       359     2  0 Sep18 ?        00:00:00 [scsi_tmf_0]
+root       361     2  0 Sep18 ?        00:00:00 [scsi_eh_1]
+root       362     2  0 Sep18 ?        00:00:00 [scsi_tmf_1]
+root       363     2  0 Sep18 ?        00:00:00 [scsi_eh_2]
+root       364     2  0 Sep18 ?        00:00:00 [scsi_tmf_2]
+root       376     2  0 Sep18 ?        00:00:00 [kpsmoused]
+root       685     2  0 Sep18 ?        00:00:00 [rtsx_pci_sdmmc_]
+root       716     2  0 Sep18 ?        00:00:00 [bioset]
+root       923     2  0 Sep18 ?        00:00:00 [kworker/1:1H]
+root       925     2  0 Sep18 ?        00:00:00 [jbd2/sda5-8]
+root       926     2  0 Sep18 ?        00:00:00 [ext4-rsv-conver]
+root       960     2  0 Sep18 ?        00:00:00 [kworker/2:1H]
+root       973     2  0 Sep18 ?        00:00:00 [kauditd]
+root       982     1  0 Sep18 ?        00:00:00 /lib/systemd/systemd-journald
+root      1003     1  0 Sep18 ?        00:00:00 /sbin/lvmetad -f
+root      1009     1  0 Sep18 ?        00:00:01 /lib/systemd/systemd-udevd
+root      1039     2  0 Sep18 ?        00:00:00 [kworker/3:1H]
+root      1040     2  0 Sep18 ?        00:00:00 [kworker/0:1H]
+root      1867     2  0 Sep18 ?        00:00:00 [kmemstick]
+root      1869     2  0 Sep18 ?        00:00:00 [cfg80211]
+root      2321     2  0 Sep18 ?        00:00:00 [kvm-irqfd-clean]
+root      2430     2  0 Sep18 ?        00:00:02 [jbd2/sda4-8]
+root      2431     2  0 Sep18 ?        00:00:00 [ext4-rsv-conver]
+root      2567     1  0 Sep18 ?        00:00:01 /usr/sbin/acpid
+root      2579     1  0 Sep18 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
+syslog    2587     1  0 Sep18 ?        00:00:00 /usr/sbin/rsyslogd -n
+root      2590     1  0 Sep18 ?        00:00:00 /usr/lib/bluetooth/bluetoothd
+message+  2593     1  0 Sep18 ?        00:00:17 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile 
+root      2669     1  0 Sep18 ?        00:00:20 /usr/sbin/NetworkManager --no-daemon
+root      2672     1  0 Sep18 ?        00:00:00 /usr/sbin/cron -f
+root      2675     1  0 Sep18 ?        00:00:00 /lib/systemd/systemd-logind
+avahi     2676     1  0 Sep18 ?        00:00:00 avahi-daemon: running [gnom-V5-573G.local]
+root      2682     1  0 Sep18 ?        00:00:00 /sbin/cgmanager -m name=systemd
+root      2691     1  0 Sep18 ?        00:00:00 /usr/sbin/ModemManager
+avahi     2761  2676  0 Sep18 ?        00:00:00 avahi-daemon: chroot helper
+root      2789     1  0 Sep18 ?        00:00:02 /usr/sbin/irqbalance --pid=/var/run/irqbalance.pid
+root      2835     1  0 Sep18 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+root      2901     1  0 Sep18 ?        00:00:02 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+nobody    2974  2669  0 Sep18 ?        00:00:01 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-i
+root      3249     1  0 Sep18 ?        00:00:00 /usr/sbin/mdm --nodaemon
+root      3251     1  0 Sep18 tty1     00:00:00 /sbin/agetty --noclear tty1 linux
+root      3260     1  0 Sep18 ?        00:00:01 /usr/sbin/apache2 -k start
+root      3321  3249  0 Sep18 ?        00:00:35 /usr/sbin/mdm --nodaemon
+root      3327  3321  1 Sep18 tty7     00:18:09 /usr/lib/xorg/Xorg :0 -audit 0 -auth /var/lib/mdm/:0.Xauth -nolisten t
+root      3345     1  0 Sep18 ?        00:00:01 /usr/sbin/nmbd -D
+root      3382     1  0 Sep18 ?        00:00:00 /usr/sbin/smbd -D
+root      3388  3382  0 Sep18 ?        00:00:00 /usr/sbin/smbd -D
+root      3390  3382  0 Sep18 ?        00:00:00 /usr/sbin/smbd -D
+mdm       3447     1  0 Sep18 ?        00:00:00 dbus-launch --autolaunch=d9fa3c05abc55928a304360857b7b6a1 --binary-syn
+mdm       3448     1  0 Sep18 ?        00:00:00 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+talal     3474     1  0 Sep18 ?        00:00:00 /lib/systemd/systemd --user
+talal     3482  3474  0 Sep18 ?        00:00:00 (sd-pam)
+talal     3489     1  0 Sep18 ?        00:00:05 /usr/bin/gnome-keyring-daemon --daemonize --login
+root      3500     1  0 Sep18 ?        00:00:00 /usr/sbin/console-kit-daemon --no-daemon
+talal     3574  3321  0 Sep18 ?        00:00:01 cinnamon-session --session cinnamon
+talal     3643  3574  0 Sep18 ?        00:00:00 /usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session /usr/bin/i
+talal     3646     1  0 Sep18 ?        00:00:00 /usr/bin/dbus-launch --exit-with-session /usr/bin/im-launch cinnamon-s
+talal     3647     1  0 Sep18 ?        00:00:04 /usr/bin/dbus-daemon --fork --print-pid 6 --print-address 9 --session
+talal     3660     1  0 Sep18 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+talal     3665  3660  0 Sep18 ?        00:00:05 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --n
+talal     3667     1  0 Sep18 ?        00:00:04 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+talal     3677  3574  0 Sep18 ?        00:00:13 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/cinnamon-settings-d
+talal     3688     1  1 Sep18 ?        00:13:30 /usr/bin/pulseaudio --start --log-target=syslog
+rtkit     3689     1  0 Sep18 ?        00:00:00 /usr/lib/rtkit/rtkit-daemon
+root      3701     1  0 Sep18 ?        00:00:01 /usr/lib/upower/upowerd
+root      3736     2  0 Sep18 ?        00:00:00 [krfcommd]
+talal     3740     1  0 Sep18 ?        00:00:00 /usr/lib/gvfs/gvfsd
+talal     3745     1  0 Sep18 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+talal     3758     1  0 Sep18 ?        00:00:00 /usr/lib/dconf/dconf-service
+talal     3762     1  0 Sep18 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+root      3765     1  0 Sep18 ?        00:00:08 /usr/lib/udisks2/udisksd --no-debug
+talal     3774     1  0 Sep18 ?        00:00:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+talal     3779     1  0 Sep18 ?        00:00:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+talal     3784     1  0 Sep18 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+talal     3790     1  0 Sep18 ?        00:00:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+colord    3794     1  0 Sep18 ?        00:00:00 /usr/lib/colord/colord
+talal     3795  3574  0 Sep18 ?        00:00:00 /usr/bin/python2 /usr/bin/cinnamon-launcher
+talal     3797  3677  0 Sep18 ?        00:00:01 syndaemon -i 1.0 -t -K -R
+talal     3799     1  0 Sep18 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-printer
+talal     3812  3795 10 Sep18 ?        01:44:57 cinnamon --replace
+talal     3821  3574  0 Sep18 ?        00:00:44 nemo -n
+talal     3822  3574  0 Sep18 ?        00:00:27 nm-applet
+talal     3823  3574  0 Sep18 ?        00:00:00 /usr/bin/python2 /usr/bin/cinnamon-killer-daemon
+talal     3827  3574  0 Sep18 ?        00:00:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+talal     3855     1  0 Sep18 ?        00:00:00 /usr/lib/gvfs/gvfsd-metadata
+talal     3862     1  0 Sep18 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.7 /org/gtk/gvfs/exec_spaw/0
+talal     3933  3812  5 Sep18 ?        00:52:27 /opt/google/chrome/chrome
+talal     3939  3933  0 Sep18 ?        00:00:00 cat
+talal     3940  3933  0 Sep18 ?        00:00:00 cat
+talal     3943  3933  0 Sep18 ?        00:00:00 /opt/google/chrome/chrome --type=zygote
+talal     3944  3943  0 Sep18 ?        00:00:00 /opt/google/chrome/nacl_helper
+talal     3947  3943  0 Sep18 ?        00:00:00 /opt/google/chrome/chrome --type=zygote
+talal     3950     1  0 Sep18 ?        00:00:00 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+talal     3951  3574  0 Sep18 ?        00:00:00 cinnamon-screensaver
+talal     3952  3574  0 Sep18 ?        00:00:00 /usr/bin/python3 /usr/bin/mintupdate-launcher
+talal     3958  3952  0 Sep18 ?        00:00:00 sh -c /usr/lib/linuxmint/mintUpdate/mintUpdate.py
+talal     3959  3958  0 Sep18 ?        00:00:05 /usr/bin/python3 /usr/lib/linuxmint/mintUpdate/mintUpdate.py
+talal     4093  3933  4 Sep18 ?        00:40:31 /opt/google/chrome/chrome --type=gpu-process --channel=3 954 --mojo-ap
+talal     4095  4093  0 Sep18 ?        00:00:00 /opt/google/chrome/chrome --type=gpu-broker              954 --mojo-ap
+talal     4103  3947  0 Sep18 ?        00:00:18 /opt/google/chrome/chrome --type=utility --mojo-channel-token=616AAE04
+talal     4117  3574  0 Sep18 ?        00:00:01 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+talal     4249  3947  0 Sep18 ?        00:03:01 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+talal     4251  3947  0 Sep18 ?        00:00:08 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+talal     4300  3947  0 Sep18 ?        00:00:04 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+talal     4315  3947  0 Sep18 ?        00:00:32 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+talal     4357  3947  0 Sep18 ?        00:00:05 /opt/google/chrome/chrome --type=ppapi --mojo-channel-token=C8B65CFDD5
+talal     4384  3947  2 Sep18 ?        00:19:52 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+talal     4441  3947  0 Sep18 ?        00:00:01 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+talal     4498     1  0 Sep18 ?        00:00:20 /usr/lib/gnome-terminal/gnome-terminal-server
+talal     4554  3947  1 Sep18 ?        00:10:39 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+talal     4804  3947  0 Sep18 ?        00:01:45 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+talal     4821  3947  0 Sep18 ?        00:02:00 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+talal     4841  3947  2 Sep18 ?        00:26:53 /opt/google/chrome/chrome --type=ppapi --mojo-channel-token=1113D12061
+root      5506     1  0 Sep18 ?        00:00:00 dbus-launch --autolaunch=d9fa3c05abc55928a304360857b7b6a1 --binary-syn
+root      5507     1  0 Sep18 ?        00:00:00 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+root      5510     1  0 Sep18 ?        00:00:00 /usr/lib/dconf/dconf-service
+talal     5537  4498  0 Sep18 pts/1    00:00:00 bash
+talal     5979     1  0 Sep18 ?        00:00:00 /usr/lib/gvfs/gvfsd-network --spawner :1.7 /org/gtk/gvfs/exec_spaw/2
+talal     5990     1  0 Sep18 ?        00:00:00 /usr/lib/gvfs/gvfsd-smb-browse --spawner :1.7 /org/gtk/gvfs/exec_spaw/
+talal     6004     1  0 Sep18 ?        00:00:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.7 /org/gtk/gvfs/exec_spaw/5
+root      6628  5537  0 Sep18 pts/1    00:00:00 sudo gedit try_host.sh
+root      6629  6628  0 Sep18 pts/1    00:00:31 gedit try_host.sh
+talal     9506  3812  0 Sep18 ?        00:00:00 /usr/lib/libreoffice/program/oosplash --writer
+talal     9526  9506  0 Sep18 ?        00:00:06 /usr/lib/libreoffice/program/soffice.bin --writer --splash-pipe=5
+talal    10397     1  0 Sep18 ?        00:00:48 /usr/bin/gedit --gapplication-service
+talal    12528  3947  0 Sep18 ?        00:04:21 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+talal    19435  3947  1 00:55 ?        00:08:17 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+talal    24974  3947 34 01:18 ?        03:12:55 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+talal    25786  3574  0 02:23 ?        00:00:04 /usr/lib/caribou/caribou
+www-data 28430  3260  0 07:35 ?        00:00:03 /usr/sbin/apache2 -k start
+www-data 28431  3260  0 07:35 ?        00:00:03 /usr/sbin/apache2 -k start
+root     28510     1  0 07:36 ?        00:00:00 /usr/sbin/cups-browsed
+root     29282     2  0 09:17 ?        00:00:00 [kworker/0:1]
+root     29552     2  0 10:01 ?        00:00:00 [kworker/u16:11]
+root     29559     2  0 10:07 ?        00:00:02 [kworker/u16:18]
+root     29583     2  0 10:07 ?        00:00:02 [kworker/u16:42]
+root     29630     2  0 10:07 ?        00:00:00 [irq/50-mei_me]
+root     29631     2  0 10:07 ?        00:00:00 [kworker/2:2]
+root     29652     2  0 10:07 ?        00:00:00 [kworker/3:3]
+root     29741     2  0 10:07 ?        00:00:00 [kworker/u17:0]
+root     29742     2  0 10:07 ?        00:00:00 [hci0]
+root     29743     2  0 10:07 ?        00:00:00 [hci0]
+root     29745     2  0 10:07 ?        00:00:00 [kworker/u17:2]
+root     29812  2669  0 10:07 ?        00:00:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /v
+root     30130     2  0 10:09 ?        00:00:00 [kworker/1:2]
+talal    30186  4498  0 10:11 pts/0    00:00:00 bash
+talal    30268  3947  0 10:11 ?        00:00:06 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+talal    30313  3947  0 10:12 ?        00:00:00 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+root     30638     2  0 10:30 ?        00:00:00 [kworker/1:0]
+root     30639     2  0 10:30 ?        00:00:00 [kworker/2:0]
+root     30674     2  0 10:32 ?        00:00:00 [kworker/3:1]
+talal    30712     1  1 10:33 ?        00:00:06 xed /home/talal/Dropbox/BS2016/protokoll
+root     30733     2  0 10:35 ?        00:00:00 [kworker/0:2]
+root     30812     2  0 10:38 ?        00:00:00 [kworker/3:0]
+talal    30819  3947  0 10:38 ?        00:00:01 /opt/google/chrome/chrome --type=renderer --enable-features=*BlockSmal
+root     30836     2  0 10:38 ?        00:00:00 [kworker/2:1]
+talal    30958 30186  0 10:42 pts/0    00:00:00 ps -efa
+talal@gnom-V5-573G /opt/idea-IU-162.1628.40/bin $ pstree
+systemd─┬─ModemManager─┬─{gdbus}
+        │              └─{gmain}
+        ├─NetworkManager─┬─dhclient
+        │                ├─dnsmasq
+        │                ├─{gdbus}
+        │                ├─{gmain}
+        │                └─{pool}
+        ├─accounts-daemon─┬─{gdbus}
+        │                 └─{gmain}
+        ├─acpid
+        ├─agetty
+        ├─apache2───2*[apache2───26*[{apache2}]]
+        ├─at-spi-bus-laun─┬─dbus-daemon
+        │                 ├─{dconf worker}
+        │                 ├─{gdbus}
+        │                 └─{gmain}
+        ├─at-spi2-registr─┬─{gdbus}
+        │                 └─{gmain}
+        ├─avahi-daemon───avahi-daemon
+        ├─bluetoothd
+        ├─cgmanager
+        ├─colord─┬─{gdbus}
+        │        └─{gmain}
+        ├─console-kit-dae─┬─62*[{console-kit-dae}]
+        │                 ├─{gdbus}
+        │                 └─{gmain}
+        ├─cron
+        ├─csd-printer─┬─{gdbus}
+        │             └─{gmain}
+        ├─cups-browsed─┬─{gdbus}
+        │              └─{gmain}
+        ├─4*[dbus-daemon]
+        ├─3*[dbus-launch]
+        ├─2*[dconf-service─┬─{gdbus}]
+        │                  └─{gmain}]
+        ├─gconfd-2
+        ├─gedit─┬─{dconf worker}
+        │       ├─{gdbus}
+        │       └─{gmain}
+        ├─gnome-keyring-d─┬─{gdbus}
+        │                 ├─{gmain}
+        │                 └─{timer}
+        ├─gnome-terminal-─┬─bash───sudo───gedit─┬─{dconf worker}
+        │                 │                     ├─{gdbus}
+        │                 │                     └─{gmain}
+        │                 ├─bash───pstree
+        │                 ├─{dconf worker}
+        │                 ├─{gdbus}
+        │                 └─{gmain}
+        ├─gvfs-afc-volume─┬─{gdbus}
+        │                 ├─{gmain}
+        │                 └─{gvfs-afc-volume}
+        ├─gvfs-goa-volume─┬─{gdbus}
+        │                 └─{gmain}
+        ├─gvfs-gphoto2-vo─┬─{gdbus}
+        │                 └─{gmain}
+        ├─gvfs-mtp-volume─┬─{gdbus}
+        │                 └─{gmain}
+        ├─gvfs-udisks2-vo─┬─{gdbus}
+        │                 └─{gmain}
+        ├─gvfsd─┬─{gdbus}
+        │       └─{gmain}
+        ├─gvfsd-dnssd─┬─{gdbus}
+        │             └─{gmain}
+        ├─gvfsd-fuse─┬─{gdbus}
+        │            ├─{gmain}
+        │            ├─{gvfs-fuse-sub}
+        │            └─2*[{gvfsd-fuse}]
+        ├─gvfsd-metadata─┬─{gdbus}
+        │                └─{gmain}
+        ├─gvfsd-network─┬─{dconf worker}
+        │               ├─{gdbus}
+        │               └─{gmain}
+        ├─gvfsd-smb-brows─┬─{dconf worker}
+        │                 ├─{gdbus}
+        │                 └─{gmain}
+        ├─gvfsd-trash─┬─{gdbus}
+        │             └─{gmain}
+        ├─irqbalance
+        ├─lvmetad
+        ├─mdm───mdm─┬─Xorg───{Xorg}
+        │           └─cinnamon-sessio─┬─applet.py───{gmain}
+        │                             ├─caribou─┬─{gdbus}
+        │                             │         └─{gmain}
+        │                             ├─cinnamon-killer─┬─{dconf worker}
+        │                             │                 ├─{gdbus}
+        │                             │                 └─{gmain}
+        │                             ├─cinnamon-launch───cinnamon─┬─chrome─┬─2*[cat]
+        │                             │                            │        ├─chrome─┬─chrome─┬─chrome─┬─{Chrome_Chil+
+        │                             │                            │        │        │        │        ├─{Proxy Resol+
+        │                             │                            │        │        │        │        └─{WorkerPool/+
+        │                             │                            │        │        │        ├─chrome─┬─{Chrome_Chil+
+        │                             │                            │        │        │        │        ├─3*[{Composit+
+        │                             │                            │        │        │        │        ├─{Compositor}
+        │                             │                            │        │        │        │        ├─{HTMLParserT+
+        │                             │                            │        │        │        │        ├─{Renderer::F+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        └─{WorkerPool/+
+        │                             │                            │        │        │        ├─chrome─┬─{Chrome_Chil+
+        │                             │                            │        │        │        │        ├─3*[{Composit+
+        │                             │                            │        │        │        │        ├─{Compositor}
+        │                             │                            │        │        │        │        ├─{HTMLParserT+
+        │                             │                            │        │        │        │        ├─{Renderer::F+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        └─{WorkerPool/+
+        │                             │                            │        │        │        ├─2*[chrome─┬─{Chrome_C+
+        │                             │                            │        │        │        │           ├─3*[{Compo+
+        │                             │                            │        │        │        │           ├─{Composit+
+        │                             │                            │        │        │        │           └─{Renderer+
+        │                             │                            │        │        │        ├─chrome─┬─{Chrome_Chil+
+        │                             │                            │        │        │        │        ├─3*[{Composit+
+        │                             │                            │        │        │        │        ├─{Compositor}
+        │                             │                            │        │        │        │        ├─{HTMLParserT+
+        │                             │                            │        │        │        │        ├─{Renderer::F+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        └─{WorkerPool/+
+        │                             │                            │        │        │        ├─2*[chrome───{Chrome_C+
+        │                             │                            │        │        │        ├─chrome─┬─{AudioOutput+
+        │                             │                            │        │        │        │        ├─{Chrome_Chil+
+        │                             │                            │        │        │        │        ├─3*[{Composit+
+        │                             │                            │        │        │        │        ├─{Compositor}
+        │                             │                            │        │        │        │        ├─{HTMLParserT+
+        │                             │                            │        │        │        │        ├─{Media}
+        │                             │                            │        │        │        │        ├─{Renderer::F+
+        │                             │                            │        │        │        │        ├─{ScriptStrea+
+        │                             │                            │        │        │        │        ├─5*[{VpxOfflo+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        └─{WorkerPool/+
+        │                             │                            │        │        │        ├─chrome─┬─{Chrome_Chil+
+        │                             │                            │        │        │        │        ├─3*[{Composit+
+        │                             │                            │        │        │        │        ├─{Compositor}
+        │                             │                            │        │        │        │        ├─{HTMLParserT+
+        │                             │                            │        │        │        │        └─{Renderer::F+
+        │                             │                            │        │        │        ├─chrome─┬─{Chrome_Chil+
+        │                             │                            │        │        │        │        ├─3*[{Composit+
+        │                             │                            │        │        │        │        ├─{Compositor}
+        │                             │                            │        │        │        │        ├─2*[{Dedicate+
+        │                             │                            │        │        │        │        ├─{HTMLParserT+
+        │                             │                            │        │        │        │        ├─{Media}
+        │                             │                            │        │        │        │        ├─{Renderer::F+
+        │                             │                            │        │        │        │        ├─{ScriptStrea+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        └─{WorkerPool/+
+        │                             │                            │        │        │        ├─chrome─┬─{Chrome_Chil+
+        │                             │                            │        │        │        │        ├─3*[{Composit+
+        │                             │                            │        │        │        │        ├─{Compositor}
+        │                             │                            │        │        │        │        ├─{HTMLParserT+
+        │                             │                            │        │        │        │        ├─{Renderer::F+
+        │                             │                            │        │        │        │        ├─{ScriptStrea+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        └─{WorkerPool/+
+        │                             │                            │        │        │        ├─chrome─┬─{Chrome_Chil+
+        │                             │                            │        │        │        │        ├─3*[{Composit+
+        │                             │                            │        │        │        │        ├─{Compositor}
+        │                             │                            │        │        │        │        ├─{HTMLParserT+
+        │                             │                            │        │        │        │        ├─{Renderer::F+
+        │                             │                            │        │        │        │        ├─{ScriptStrea+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        └─{WorkerPool/+
+        │                             │                            │        │        │        ├─chrome─┬─{Chrome_Chil+
+        │                             │                            │        │        │        │        ├─3*[{Composit+
+        │                             │                            │        │        │        │        ├─{Compositor}
+        │                             │                            │        │        │        │        ├─{FFmpegDemux+
+        │                             │                            │        │        │        │        ├─{HTMLParserT+
+        │                             │                            │        │        │        │        ├─{Media}
+        │                             │                            │        │        │        │        ├─{Renderer::F+
+        │                             │                            │        │        │        │        ├─{ScriptStrea+
+        │                             │                            │        │        │        │        ├─{ServiceWork+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        └─{WorkerPool/+
+        │                             │                            │        │        │        ├─chrome─┬─{Chrome_Chil+
+        │                             │                            │        │        │        │        ├─3*[{Composit+
+        │                             │                            │        │        │        │        ├─{Compositor}
+        │                             │                            │        │        │        │        ├─{HTMLParserT+
+        │                             │                            │        │        │        │        ├─{Media}
+        │                             │                            │        │        │        │        ├─{Renderer::F+
+        │                             │                            │        │        │        │        ├─{ScriptStrea+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        └─{WorkerPool/+
+        │                             │                            │        │        │        ├─chrome─┬─{AudioOutput+
+        │                             │                            │        │        │        │        ├─{Chrome_Chil+
+        │                             │                            │        │        │        │        ├─3*[{Composit+
+        │                             │                            │        │        │        │        ├─{Compositor}
+        │                             │                            │        │        │        │        ├─{HTMLParserT+
+        │                             │                            │        │        │        │        ├─{Media}
+        │                             │                            │        │        │        │        ├─{Renderer::F+
+        │                             │                            │        │        │        │        ├─{ScriptStrea+
+        │                             │                            │        │        │        │        ├─5*[{VpxOfflo+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        ├─{WorkerPool/+
+        │                             │                            │        │        │        │        └─{WorkerPool/+
+        │                             │                            │        │        │        ├─chrome─┬─{Chrome_Chil+
+        │                             │                            │        │        │        │        ├─3*[{Composit+
+        │                             │                            │        │        │        │        ├─{Compositor}
+        │                             │                            │        │        │        │        ├─{HTMLParserT+
+        │                             │                            │        │        │        │        ├─{Renderer::F+
+        │                             │                            │        │        │        │        └─{ScriptStrea+
+        │                             │                            │        │        │        └─chrome─┬─{Chrome_Chil+
+        │                             │                            │        │        │                 ├─3*[{Composit+
+        │                             │                            │        │        │                 ├─{Compositor}
+        │                             │                            │        │        │                 ├─{HTMLParserT+
+        │                             │                            │        │        │                 ├─{Renderer::F+
+        │                             │                            │        │        │                 ├─{ScriptStrea+
+        │                             │                            │        │        │                 ├─{WorkerPool/+
+        │                             │                            │        │        │                 ├─{WorkerPool/+
+        │                             │                            │        │        │                 ├─{WorkerPool/+
+        │                             │                            │        │        │                 ├─{WorkerPool/+
+        │                             │                            │        │        │                 ├─{WorkerPool/+
+        │                             │                            │        │        │                 └─{WorkerPool/+
+        │                             │                            │        │        └─nacl_helper
+        │                             │                            │        ├─chrome─┬─chrome
+        │                             │                            │        │        ├─{Chrome_ChildIOT}
+        │                             │                            │        │        └─{Watchdog}
+        │                             │                            │        ├─{AudioThread}
+        │                             │                            │        ├─{BatteryStatusNo}
+        │                             │                            │        ├─3*[{BrowserBlocking}]
+        │                             │                            │        ├─{BrowserWatchdog}
+        │                             │                            │        ├─{CachePoolWorker}
+        │                             │                            │        ├─{Chrome_CacheThr}
+        │                             │                            │        ├─{Chrome_DBThread}
+        │                             │                            │        ├─{Chrome_FileThre}
+        │                             │                            │        ├─{Chrome_FileUser}
+        │                             │                            │        ├─{Chrome_HistoryT}
+        │                             │                            │        ├─{Chrome_IOThread}
+        │                             │                            │        ├─{Chrome_ProcessL}
+        │                             │                            │        ├─{CompositorTileW}
+        │                             │                            │        ├─{CrShutdownDetec}
+        │                             │                            │        ├─{D-Bus thread}
+        │                             │                            │        ├─{IndexedDB}
+        │                             │                            │        ├─{LevelDBEnv}
+        │                             │                            │        ├─{NetworkChangeNo}
+        │                             │                            │        ├─5*[{SimpleCacheWork}]
+        │                             │                            │        ├─{WorkerPool/2937}
+        │                             │                            │        ├─{WorkerPool/3002}
+        │                             │                            │        ├─{chrome}
+        │                             │                            │        ├─{dconf worker}
+        │                             │                            │        ├─{extension_crash}
+        │                             │                            │        ├─{gdbus}
+        │                             │                            │        ├─{gmain}
+        │                             │                            │        ├─{gpu-process_cra}
+        │                             │                            │        ├─{inotify_reader}
+        │                             │                            │        ├─{ppapi_crash_upl}
+        │                             │                            │        ├─{renderer_crash_}
+        │                             │                            │        ├─{sandbox_ipc_thr}
+        │                             │                            │        └─2*[{threaded-ml}]
+        │                             │                            ├─oosplash─┬─soffice.bin─┬─{ICEConnectionWo}
+        │                             │                            │          │             ├─{OfficeIPCThread}
+        │                             │                            │          │             ├─{SelectionManage}
+        │                             │                            │          │             ├─{gdbus}
+        │                             │                            │          │             ├─{gmain}
+        │                             │                            │          │             ├─{rtl_cache_wsupd}
+        │                             │                            │          │             └─4*[{thread-pool}]
+        │                             │                            │          ├─{osl_executeProc}
+        │                             │                            │          └─{rtl_cache_wsupd}
+        │                             │                            ├─{JS GC Helper}
+        │                             │                            ├─{JS Sour~ Thread}
+        │                             │                            ├─{dconf worker}
+        │                             │                            ├─{gdbus}
+        │                             │                            ├─{gmain}
+        │                             │                            └─{pool}
+        │                             ├─cinnamon-screen─┬─{dconf worker}
+        │                             │                 ├─{gdbus}
+        │                             │                 └─{gmain}
+        │                             ├─cinnamon-settin─┬─syndaemon
+        │                             │                 ├─{dconf worker}
+        │                             │                 ├─{gdbus}
+        │                             │                 ├─{gmain}
+        │                             │                 └─2*[{threaded-ml}]
+        │                             ├─mintupdate-laun───sh───mintUpdate─┬─{dconf worker}
+        │                             │                                   ├─{gdbus}
+        │                             │                                   ├─{gmain}
+        │                             │                                   └─{mintUpdate}
+        │                             ├─nemo─┬─{dconf worker}
+        │                             │      ├─{gdbus}
+        │                             │      ├─{gmain}
+        │                             │      └─{pool}
+        │                             ├─nm-applet─┬─{dconf worker}
+        │                             │           ├─{gdbus}
+        │                             │           ├─{gmain}
+        │                             │           └─{pool}
+        │                             ├─polkit-gnome-au─┬─{gdbus}
+        │                             │                 └─{gmain}
+        │                             ├─ssh-agent
+        │                             ├─{dconf worker}
+        │                             ├─{gdbus}
+        │                             └─{gmain}
+        ├─nmbd
+        ├─polkitd─┬─{gdbus}
+        │         └─{gmain}
+        ├─pulseaudio─┬─{alsa-sink-ALC28}
+        │            ├─{alsa-sink-HDMI }
+        │            └─{alsa-source-ALC}
+        ├─rsyslogd─┬─{in:imklog}
+        │          ├─{in:imuxsock}
+        │          └─{rs:main Q:Reg}
+        ├─rtkit-daemon───2*[{rtkit-daemon}]
+        ├─smbd───2*[smbd]
+        ├─systemd───(sd-pam)
+        ├─systemd-journal
+        ├─systemd-logind
+        ├─systemd-udevd
+        ├─udisksd─┬─{cleanup}
+        │         ├─{gdbus}
+        │         ├─{gmain}
+        │         └─{probing-thread}
+        ├─upowerd─┬─{gdbus}
+        │         └─{gmain}
+        ├─wpa_supplicant
+        └─xed─┬─{dconf worker}
+              ├─{gdbus}
+              ├─{gmain}
+              └─{pool}
+
+talal@gnom-V5-573G /opt/idea-IU-162.1628.40/bin $ clear
+
+talal@gnom-V5-573G /opt/idea-IU-162.1628.40/bin $ pwd
+/opt/idea-IU-162.1628.40/bin
+talal@gnom-V5-573G /opt/idea-IU-162.1628.40/bin $ cd ~/Dropbox/BS2016/
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ rm ausgabecopy.txt
+rm: das Entfernen von 'ausgabecopy.txt' ist nicht möglich: Datei oder Verzeichnis nicht gefunden
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ rm ausgabe
+ausgabeFr.txt  ausgabe.txt    
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ rm ausgabeFr.txt 
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ ls
+ausgabe.txt                                         BSPAufgabe1.pdf  long.txt  protokoll
+BS_2016_WS_Orga_Infos.pdf                           cProgramme       mkfile.c  schreiben.odt
+BS_2016_WS_Vorlesung_01_160916_Folien_1_bis_41.pdf  link.txt         newDir    skripte
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ rmdir newDir/
+rmdir: konnte 'newDir/' nicht entfernen: Das Verzeichnis ist nicht leer
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ man rmdir 
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ rmdir --ignore-fail-on-non-empty newDir/
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ sleep 10
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ time git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+Allgemeine Git-Kommandos, verwendet in verschiedenen Situationen:
+
+Arbeitsverzeichnis anlegen (siehe auch: git help tutorial)
+   clone      ein Repository in einem neuen Verzeichnis klonen
+   init       ein leeres Git-Repository erstellen oder ein bestehendes neuinitialisieren
+
+an aktuellen Änderungen arbeiten (siehe auch: git help everyday)
+   add        Dateiinhalte zum Commit vormerken
+   mv         eine Datei, ein Verzeichnis, oder eine symbolische Verknüpfung verschieben oder umbenennen
+   reset      aktuellen HEAD zu einem spezifizierten Zustand setzen
+   rm         Dateien im Arbeitsverzeichnis und vom Index löschen
+
+Historie und Status untersuchen (siehe auch: git help revisions)
+   bisect     Binärsuche verwenden, um den Commit zu finden, der einen Fehler verursacht hat
+   grep       Zeilen darstellen, die einem Muster entsprechen
+   log        Commit-Historie anzeigen
+   show       verschiedene Arten von Objekten anzeigen
+   status     den Zustand des Arbeitsverzeichnisses anzeigen
+
+Historie erweitern und bearbeiten
+   branch     Branches anzeigen, erstellen oder entfernen
+   checkout   Branches wechseln oder Dateien im Arbeitsverzeichnis wiederherstellen
+   commit     Änderungen in das Repository eintragen
+   diff       Änderungen zwischen Commits, Commit und Arbeitsverzeichnis, etc. anzeigen
+   merge      zwei oder mehr Entwicklungszweige zusammenführen
+   rebase     lokale Commits auf einem aktuellerem Upstream-Branch neu aufbauen
+   tag        ein mit GPG signiertes Tag-Objekt erzeugen, auflisten, löschen oder verifizieren.
+
+mit anderen zusammenarbeiten (siehe auch: git help workflows)
+   fetch      Objekte und Referenzen von einem anderen Repository herunterladen
+   pull       Objekte von einem externen Repository anfordern und sie mit einem anderen Repository oder einem lokalen Branch zusammenführen
+   push       Remote-Referenzen mitsamt den verbundenen Objekten aktualisieren
+
+'git help -a' und 'git help -g' listet verfügbare Unterkommandos und
+einige Anleitungen zu Git-Konzepten auf. Benutzen Sie 'git help <Kommando>'
+oder 'git help <Konzept>', um mehr über ein spezifisches Kommando oder
+Konzept zu erfahren.
+
+real	0m0.110s
+user	0m0.000s
+sys	0m0.004s
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ SIZE=20
+talal@gnom-V5-573G ~/Dropbox/BS2016 $ who
+talal    tty7         2016-09-18 18:36 (:0)
+
+

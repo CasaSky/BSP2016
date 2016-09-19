@@ -1,0 +1,59 @@
+Betriebssystem
+QS-Informatik
+Dieser Artikel wurde wegen inhaltlicher Mängel auf der Qualitätssicherungsseite der Redaktion Informatik eingetragen. Dies geschieht, um die Qualität der Artikel aus dem Themengebiet Informatik auf ein akzeptables Niveau zu bringen. Hilf mit, die inhaltlichen Mängel dieses Artikels zu beseitigen, und beteilige dich an der Diskussion! (+)
+Begründung: Da fehlt leider noch enorm viel, v.a. im Bereich Geschichte (Ab wann kann von Betriebssystemen überhaupt gesprochen werden? Zeittafel / Stammbaum wäre gut) und Technik (Abgrenzung Kernel / Dienstprogramme / Treiber). --Jacek79✇✇ 16:47, 24. Dez. 2015 (CET) Auch fehlt eine Auflistung der Arten von Betriebssystemen.--Sae1962 (Diskussion) 11:52, 30. Jan. 2016 (CET)
+
+
+Zusammenhang zwischen Betriebssystem, Hardware, Anwendungssoftware und dem Benutzer
+Ein Betriebssystem ist eine Zusammenstellung von Computerprogrammen, die die Systemressourcen eines Computers wie Arbeitsspeicher, Festplatten, Ein- und Ausgabegeräte verwaltet und diese Anwendungsprogrammen zur Verfügung stellt. Das Betriebssystem bildet dadurch die Schnittstelle zwischen den Hardware-Komponenten und der Anwendungssoftware des Benutzers.[1] Betriebssysteme bestehen in der Regel aus einem Kernel (deutsch: Kern), der die Hardware des Computers verwaltet, sowie speziellen Programmen, die beim Start unterschiedliche Aufgaben übernehmen. Zu diesen Aufgaben gehört unter anderem das Laden von Gerätetreibern. Betriebssysteme finden sich in fast allen Arten von Computern: Als Echtzeitbetriebssysteme auf Prozessrechnern und Eingebetteten Systemen, auf Personal Computern, Tablet Computern, Smartphones und auf größeren Mehrprozessorsystemen wie z. B. Servern und Großrechnern.
+Die Aufgaben eines Betriebssystems lassen sich wie folgt zusammenfassen: Benutzerkommunikation; Laden, Ausführen, Unterbrechen und Beenden von Programmen; Verwaltung und Zuteilung der Prozessorzeit; Verwaltung des internen Speicherplatzes für Anwendungen; Verwaltung und Betrieb der angeschlossenen Geräte; Schutzfunktionen z. B. durch Zugriffsbeschränkungen. Die Gewichtung zwischen diesen Aufgaben wandelte sich im Laufe der Zeit, insbesondere wird Schutzfunktionen wie dem Speicherschutz oder begrenzten Benutzerrechten heute eine höhere Bedeutung zugemessen als noch in den 1990er Jahren. Dies macht Systeme allgemein robuster, reduziert z. B. die Zahl der Programm- und Systemabstürze und macht das System auch stabiler gegen Angriffe von außen, etwa durch Computerviren.
+Dieser Artikel behandelt den Begriff „Betriebssystem“ hauptsächlich im Kontext „allgemein zur Informationsverarbeitung verwendete Computersysteme“. Daneben sind Betriebssysteme (mit ggf. spezialisierter Funktionalität) grundsätzlich in nahezu allen Geräten im Einsatz, in denen Software betrieben wird (wie Spielecomputer, Mobiltelefone, Navigationssysteme, Maschinen der Maschinenbaubranchen u. v. a.). Auch viele Steuerungssysteme (eingebettetes System) die z. B. in Flugzeugen, Autos, Zügen, oder in Satelliten zu finden sind, besitzen spezialisierte Betriebssysteme.
+Inhaltsverzeichnis  [Verbergen] 
+1	Definitionen und Abgrenzung
+2	Entwicklungsstufen
+3	Aufgaben
+4	Betriebsmittelverwaltung und Abstraktion
+4.1	Einführendes Beispiel: Zeitgeberbausteine
+4.1.1	Virtuelle Prozessoren
+4.1.2	Virtuelle Zeitgeber
+4.2	Abstraktion
+4.3	Virtualisierung weiterer Betriebsmittel
+4.3.1	Dateisysteme
+4.3.2	Interner Speicher
+4.3.3	Netzwerk
+4.3.4	Bildschirm
+5	Geschichte
+5.1	Erste Betriebssysteme (bis 1980)
+5.2	Meilensteine
+5.2.1	Der C64, ein Heimcomputer der 1980er Jahre
+5.2.2	Die grafische Benutzeroberfläche (GUI) von Apple
+5.2.3	Der Mac-OS-Nachfolger
+5.2.4	Disk Operating System (DOS)
+5.2.5	Microsoft Windows
+5.2.6	Linux (GNU/Linux)
+6	Siehe auch
+7	Literatur
+8	Weblinks
+9	Einzelnachweise
+Definitionen und Abgrenzung[Bearbeiten | Quelltext bearbeiten]
+In der DIN-Sammlung 44300 wird Betriebssystem definiert mit: Die Programme eines digitalen Rechensystems, die zusammen mit den Eigenschaften dieser Rechenanlage die Basis der möglichen Betriebsarten des digitalen Rechensystems bilden und die insbesondere die Abwicklung von Programmen steuern und überwachen.
+In der Literatur wird der Begriff „Betriebssystem“ unterschiedlich breit interpretiert:
+So beschränkt Andrew S. Tanenbaum den Begriff auf den Kernel eines Betriebssystems. Er schreibt:
+„Editoren, Compiler, Assembler, Binder und Kommandointerpreter sind definitiv nicht Teil des Betriebssystems, auch wenn sie bedeutsam und nützlich sind.“
+– Andrew S. Tanenbaum: [2]
+In diesem Sinne stellt das Betriebssystem selbst lediglich eine Schnittstelle für Systemfunktionen (auch Systemrufe oder Systemaufrufe genannt) bereit, die von Programmen genutzt werden können. Hierzu sind auch Boot-Loader, Gerätetreiber, bestimmte Systemdienste, Programmbibliotheken etc. erforderlich. Die meisten aktuellen Betriebssystem-Lehrbücher und Universitätsvorlesungen folgen dieser engeren Sichtweise und behandeln daher ausschließlich die Aufgaben des Kernels.
+Andere Autoren zählen u. a. auch eine Kommandosprache zum Betriebssystem:
+„Besides managing the hardware resources […], modern operating systems also provide numerous services, such as inter-process communication, file and directory systems, data transfer over networks, and a command language“
+„Außer die Hardware zu verwalten […], bieten moderne Betriebssysteme zahlreiche Dienste an, etwa zur Verständigung der Prozesse untereinander, Datei- und Verzeichnissysteme, Datenübertragung über Netzwerke und eine Befehlssprache.“
+– Anthony Ralston, Edwin D. Reilly: [3]
+Eine noch weitere Fassung des Begriffes, die beispielsweise auch Editoren und Compiler umfasst, geht zum Teil auf ältere Werke des deutschen Sprachraums zurück, lässt sich aber auch in aktueller Literatur noch finden. So zählen die Autoren des Informatik-Dudens[4] auch Übersetzungsprogramme und Dienstprogramme zu den wesentlichen Komponenten eines Betriebssystems. In jüngerer Zeit kann der GNU/Linux-Namensstreit als Beispiel für die Abgrenzungsprobleme angesehen werden.
+Ungeachtet dessen, wie weit oder wie eng man den Begriff „Betriebssystem“ fasst, enthalten die Installationsmedien für Betriebssysteme für gewöhnlich zusätzliche Dienst- und Anwendungsprogramme.
+Entwicklungsstufen[Bearbeiten | Quelltext bearbeiten]
+Die Entwicklung von Computer-Betriebssystemen verlief und verläuft parallel zur Entwicklung und Leistungsfähigkeit verfügbarer Hardware: Beide Linien bedingten sich gegenseitig und ermöglichten bzw. erforderten Weiterentwicklungen auf der ‚anderen‘ Seite. Die Entwicklung verlief zum Teil in kleinen, manchmal in größeren Sprüngen:
+Lochkarten verarbeitende Systeme (gilt sinngemäß auch für Lochstreifen) gehören mittlerweile (seit Anfang der 1970er Jahre) der Vergangenheit an. Jedoch sind sie ein guter Ansatz zur Betrachtung der Systementwicklung: In diesen räumlich relativ großen Systemen gab es noch keine externen elektronischen Speichermedien. Die Programme lagen (in Maschinensprache) in Form von Lochkartenstapeln vor und wurden durch den Operator über den Lochkartenleser in den internen Speicher ‚eingelesen‘. Nach der „Ende-Karte“ wurde das Anwendungsprogramm gestartet, das seine Eingabedaten je nach Aufgabenstellung ebenfalls über den Kartenleser lesen (deshalb der Begriff Stapelverarbeitung, engl. batch processing, queued systems) und seine Ergebnisse direkt über einen Drucker und/oder über den Kartenstanzer ausgeben musste. Vor- und nachgelagert waren, mithilfe elektro-mechanischer Geräte (Kartenlocher, Mischer, Sortierer) ausgeführt, Erfassungs-, Misch- und Sortiervorgänge erforderlich. Bereits zu diesem Zeitpunkt war die interne Verarbeitung deutlich schneller als die Ein-/Ausgabegeräte; das Lesen eines Lochkartenstapels (Karton mit 2000 Karten) dauerte ca. 5–10 Minuten, die Arbeitsspeichergrößen solcher Rechner lagen bei ca. 16 bis 64 kB (Beispiel siehe System/360).
+Diese Maschinen besaßen kein konventionelles Betriebssystem, wie es heute geläufig ist. Lediglich ein Kontrollprogramm (resident monitor) wurde im Speicher gehalten und sorgte für den reibungslosen Ablauf, indem es die Kontrolle an die momentan auszuführenden Programme übergab. Der Rechner konnte stets nur ein Programm nach dem anderen ausführen.
+Eine Weiterentwicklung – Multiprogrammed Batch Systems – konnte zusätzliche Geräte unterstützen (Magnetbandeinheiten, erste Magnetplatten mit z. B. 7,25 MB Speichervolumen), mehrere Programme gleichzeitig ausführen (z. B. in 3 'Partitionen') sowie Programme und Daten auf externen Speichern halten. Eine schnellere Abarbeitung war möglich, da die Zeit für das Lesen und Ausgeben der Kartenstapel entfiel – und die Prozessoren schneller wurden. Hier wurden Mechanismen wie das Spooling (Zwischenausgabe von Druckerdaten auf Magnetband mit verzögertem, parallel möglichem Drucken) und die Möglichkeit des Offline-Betriebs bereits ausgiebig genutzt. Jedoch war ein Programm nötig, welches sich der Aufgaben E/A-Verwaltung, Speicherverwaltung und vor allem CPU-Scheduling etc. annimmt. Ab diesem Zeitpunkt konnte man von ersten Betriebssystemen reden.
+Die nächsten Schritte waren dann Folgen der jeweiligen Aufgabenbereiche, die den Systemen zukamen. Folgende Systeme sind entstanden und bis zum heutigen Tage im Einsatz: Parallele Systeme, Verteilte Systeme, Personal-Computer-Systeme, Time-Sharing-Systeme, Real-Time-Systeme und in neuester Zeit auch die so genannten Handheld-Systeme.
+Im PC-Bereich sind derzeit die meistgenutzten Betriebssysteme die verschiedenen Varianten von Microsoft Windows (führend bei Systemen mit GUI), BSD inkl. Apple OS X und GNU/Linux (führend bei Servern). Für spezielle Anwendungen (Beispiel: industrielle Steuerung) werden auch experimentelle Betriebssysteme für Forschungs- und Lehrzwecke eingesetzt.
+Neben den klassischen Varianten gibt es noch spezielle Betriebssysteme für verteilte Systeme, bei denen zwischen dem logischen System und den physikalischen System(en) unterschieden wird. Der logische Rechner besteht aus mehreren physikalischen Rechnereinheiten. Viele Großrechner, Number-Cruncher und die Systeme aus dem Hause Cray arbeiten nach diesem Prinzip. Eines der bekanntesten Betriebssysteme im Bereich verteilte Systeme ist Amoeba.
+Siehe auch: Liste von Betriebssystemen
